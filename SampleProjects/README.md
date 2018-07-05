@@ -1,1 +1,1 @@
-A few sample Objective-C projects and unmodified Conversion results (produced by Swiftify converter).
+A few sample Objective-C projects and unmodified conversion results (produced by Swiftify converter).
