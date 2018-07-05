@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1545B4BF1EF9FCED00A5A63E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B4BE1EF9FCED00A5A63E /* main.m */; };
+		1545B4C21EF9FCED00A5A63E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B4C11EF9FCED00A5A63E /* AppDelegate.m */; };
+		1545B4C81EF9FCED00A5A63E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1545B4C61EF9FCED00A5A63E /* Main.storyboard */; };
+		1545B4CA1EF9FCED00A5A63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1545B4C91EF9FCED00A5A63E /* Assets.xcassets */; };
+		1545B4CD1EF9FCED00A5A63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1545B4CB1EF9FCED00A5A63E /* LaunchScreen.storyboard */; };
+		1545B4D61EFA166E00A5A63E /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B4D51EFA166E00A5A63E /* MainMenuViewController.m */; };
+		1545B4DA1EFA171400A5A63E /* InGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B4D91EFA171400A5A63E /* InGameViewController.m */; };
+		1545B4E21EFA1C7A00A5A63E /* UIColor+UIColor_CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B4E11EFA1C7A00A5A63E /* UIColor+UIColor_CustomColors.m */; };
+		155929161EFCB4F500A6DFCF /* TimeGames.wav in Resources */ = {isa = PBXBuildFile; fileRef = 155929151EFCB4F500A6DFCF /* TimeGames.wav */; };
+		15B496AF1EFCC9E4009961DD /* buzzer_x.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15B496AE1EFCC9E4009961DD /* buzzer_x.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1545B4BA1EF9FCED00A5A63E /* Tap Tap Too.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Tap Too.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1545B4BE1EF9FCED00A5A63E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1545B4C01EF9FCED00A5A63E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1545B4C11EF9FCED00A5A63E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1545B4C71EF9FCED00A5A63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1545B4C91EF9FCED00A5A63E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1545B4CC1EF9FCED00A5A63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1545B4CE1EF9FCED00A5A63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1545B4D41EFA166E00A5A63E /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		1545B4D51EFA166E00A5A63E /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		1545B4D81EFA171400A5A63E /* InGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InGameViewController.h; sourceTree = "<group>"; };
+		1545B4D91EFA171400A5A63E /* InGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InGameViewController.m; sourceTree = "<group>"; };
+		1545B4E01EFA1C7A00A5A63E /* UIColor+UIColor_CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_CustomColors.h"; sourceTree = "<group>"; };
+		1545B4E11EFA1C7A00A5A63E /* UIColor+UIColor_CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_CustomColors.m"; sourceTree = "<group>"; };
+		155929151EFCB4F500A6DFCF /* TimeGames.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TimeGames.wav; sourceTree = "<group>"; };
+		15A9A8F21EFF533100924402 /* UIViewControllerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerProtocols.h; sourceTree = "<group>"; };
+		15B496AE1EFCC9E4009961DD /* buzzer_x.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buzzer_x.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1545B4B71EF9FCED00A5A63E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1545B4B11EF9FCED00A5A63E = {
+			isa = PBXGroup;
+			children = (
+				1545B4BC1EF9FCED00A5A63E /* Tap Tap Too */,
+				1545B4BB1EF9FCED00A5A63E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1545B4BB1EF9FCED00A5A63E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1545B4BA1EF9FCED00A5A63E /* Tap Tap Too.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1545B4BC1EF9FCED00A5A63E /* Tap Tap Too */ = {
+			isa = PBXGroup;
+			children = (
+				15A9A8F31EFF533A00924402 /* Protocols */,
+				155929171EFCB4FE00A6DFCF /* Sounds and Music */,
+				1545B4DE1EFA1AE200A5A63E /* Categories and Extensions */,
+				1545B4D71EFA167700A5A63E /* View Controllers */,
+				1545B4C01EF9FCED00A5A63E /* AppDelegate.h */,
+				1545B4C11EF9FCED00A5A63E /* AppDelegate.m */,
+				1545B4C61EF9FCED00A5A63E /* Main.storyboard */,
+				1545B4C91EF9FCED00A5A63E /* Assets.xcassets */,
+				1545B4CB1EF9FCED00A5A63E /* LaunchScreen.storyboard */,
+				1545B4CE1EF9FCED00A5A63E /* Info.plist */,
+				1545B4BD1EF9FCED00A5A63E /* Supporting Files */,
+			);
+			path = "Tap Tap Too";
+			sourceTree = "<group>";
+		};
+		1545B4BD1EF9FCED00A5A63E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1545B4BE1EF9FCED00A5A63E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1545B4D71EFA167700A5A63E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1545B4D81EFA171400A5A63E /* InGameViewController.h */,
+				1545B4D91EFA171400A5A63E /* InGameViewController.m */,
+				1545B4D41EFA166E00A5A63E /* MainMenuViewController.h */,
+				1545B4D51EFA166E00A5A63E /* MainMenuViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1545B4DE1EFA1AE200A5A63E /* Categories and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1545B4E01EFA1C7A00A5A63E /* UIColor+UIColor_CustomColors.h */,
+				1545B4E11EFA1C7A00A5A63E /* UIColor+UIColor_CustomColors.m */,
+			);
+			name = "Categories and Extensions";
+			sourceTree = "<group>";
+		};
+		155929171EFCB4FE00A6DFCF /* Sounds and Music */ = {
+			isa = PBXGroup;
+			children = (
+				155929151EFCB4F500A6DFCF /* TimeGames.wav */,
+				15B496AE1EFCC9E4009961DD /* buzzer_x.wav */,
+			);
+			name = "Sounds and Music";
+			sourceTree = "<group>";
+		};
+		15A9A8F31EFF533A00924402 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				15A9A8F21EFF533100924402 /* UIViewControllerProtocols.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1545B4B91EF9FCED00A5A63E /* Tap Tap Too */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1545B4D11EF9FCED00A5A63E /* Build configuration list for PBXNativeTarget "Tap Tap Too" */;
+			buildPhases = (
+				1545B4B61EF9FCED00A5A63E /* Sources */,
+				1545B4B71EF9FCED00A5A63E /* Frameworks */,
+				1545B4B81EF9FCED00A5A63E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tap Tap Too";
+			productName = "Tap Tap Too";
+			productReference = 1545B4BA1EF9FCED00A5A63E /* Tap Tap Too.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1545B4B21EF9FCED00A5A63E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Adamant Jumper";
+				TargetAttributes = {
+					1545B4B91EF9FCED00A5A63E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1545B4B51EF9FCED00A5A63E /* Build configuration list for PBXProject "Tap Tap Too" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1545B4B11EF9FCED00A5A63E;
+			productRefGroup = 1545B4BB1EF9FCED00A5A63E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1545B4B91EF9FCED00A5A63E /* Tap Tap Too */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1545B4B81EF9FCED00A5A63E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B496AF1EFCC9E4009961DD /* buzzer_x.wav in Resources */,
+				1545B4CD1EF9FCED00A5A63E /* LaunchScreen.storyboard in Resources */,
+				155929161EFCB4F500A6DFCF /* TimeGames.wav in Resources */,
+				1545B4CA1EF9FCED00A5A63E /* Assets.xcassets in Resources */,
+				1545B4C81EF9FCED00A5A63E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1545B4B61EF9FCED00A5A63E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1545B4C21EF9FCED00A5A63E /* AppDelegate.m in Sources */,
+				1545B4DA1EFA171400A5A63E /* InGameViewController.m in Sources */,
+				1545B4D61EFA166E00A5A63E /* MainMenuViewController.m in Sources */,
+				1545B4E21EFA1C7A00A5A63E /* UIColor+UIColor_CustomColors.m in Sources */,
+				1545B4BF1EF9FCED00A5A63E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1545B4C61EF9FCED00A5A63E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1545B4C71EF9FCED00A5A63E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1545B4CB1EF9FCED00A5A63E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1545B4CC1EF9FCED00A5A63E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1545B4CF1EF9FCED00A5A63E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1545B4D01EF9FCED00A5A63E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1545B4D21EF9FCED00A5A63E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tap Tap Too/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamantjumper.Tap-Tap-Too";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1545B4D31EF9FCED00A5A63E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tap Tap Too/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamantjumper.Tap-Tap-Too";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1545B4B51EF9FCED00A5A63E /* Build configuration list for PBXProject "Tap Tap Too" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1545B4CF1EF9FCED00A5A63E /* Debug */,
+				1545B4D01EF9FCED00A5A63E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1545B4D11EF9FCED00A5A63E /* Build configuration list for PBXNativeTarget "Tap Tap Too" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1545B4D21EF9FCED00A5A63E /* Debug */,
+				1545B4D31EF9FCED00A5A63E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1545B4B21EF9FCED00A5A63E /* Project object */;
+}
