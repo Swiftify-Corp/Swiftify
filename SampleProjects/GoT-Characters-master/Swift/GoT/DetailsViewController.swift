@@ -6,7 +6,6 @@
 //  Copyright © 2015 Maciej Piotrowski. All rights reserved.
 //
 
-import Masonry
 import UIKit
 
 class DetailsViewController: UIViewController {
