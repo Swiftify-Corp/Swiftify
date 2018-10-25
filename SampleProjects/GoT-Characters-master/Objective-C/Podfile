@@ -1,0 +1,3 @@
+target "GoT" do
+	pod 'Masonry'
+end

@@ -1,0 +1,7 @@
+**/xcuserdata
+**/xcuserdata/
+
+**/*.xcuserdatad
+**/*.xcuserdatad/
+
+**/*.xcuserstate
