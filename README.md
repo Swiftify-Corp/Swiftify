@@ -9,7 +9,7 @@
 - [Swiftify AppCode plugin](https://plugins.jetbrains.com/plugin/9701-swiftify)
 - [Online Converter](https://objectivec2swift.com/#/converter/)
 
-Projects migrated to Swift:
+Projects migrated to Swift by Swiftify Team:
 - [IHProgressHUD](https://github.com/Swiftify-Corp/IHProgressHUD)
 - [Swift-30-Projects](https://github.com/Swiftify-Corp/Swift-30-Projects)
 
