@@ -55,8 +55,7 @@ class InGameViewController: UIViewController, AVAudioPlayerDelegate {
     }
 
     func loadGameMusic() {
-        // TODO: import SwiftTryCatch from https://github.com/eggheadgames/SwiftTryCatch
-        //SwiftTryCatch.tryBlock({
+        SwiftTryCatch.try({
             gameMusic = URL(fileURLWithPath: Bundle.main.path(forResource: "TimeGames", ofType: "wav") ?? "")
             do {
                 if let gameMusic = gameMusic {
@@ -64,10 +63,10 @@ class InGameViewController: UIViewController, AVAudioPlayerDelegate {
                 }
             } catch {
             }
-        //}, catchBlock: { exception in
+        }, catch: { exception in
             print("Music couldn't be load")
-        //}, finallyBlock: {
-        //})
+        }, finallyBlock: {
+        })
 
         gameAudioPlayer?.enableRate = true
         gameAudioPlayer?.prepareToPlay()
@@ -113,8 +112,7 @@ class InGameViewController: UIViewController, AVAudioPlayerDelegate {
     func endGame() {
         gameTimer?.invalidate()
         gameAudioPlayer?.stop()
-        // TODO: import SwiftTryCatch from https://github.com/eggheadgames/SwiftTryCatch
-        //SwiftTryCatch.tryBlock({
+        SwiftTryCatch.try({
             gameEndedSound = URL(fileURLWithPath: Bundle.main.path(forResource: "buzzer_x", ofType: "wav") ?? "")
             do {
                 if let gameEndedSound = gameEndedSound {
@@ -122,10 +120,10 @@ class InGameViewController: UIViewController, AVAudioPlayerDelegate {
                 }
             } catch {
             }
-        //}, catchBlock: { exception in
-        //    print("Music couldn't be load")
-        //}, finallyBlock: {
-        //})
+        }, catch: { exception in
+            print("Music couldn't be load")
+        }, finallyBlock: {
+        })
         soundsAudioPlayer?.prepareToPlay()
         soundsAudioPlayer?.play()
         soundsAudioPlayer?.volume = 1.0

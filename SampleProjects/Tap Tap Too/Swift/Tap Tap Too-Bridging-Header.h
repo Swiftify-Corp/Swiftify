@@ -19,6 +19,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
+#import "SwiftTryCatch/SwiftTryCatch.h"
 
 // End Swiftify generated imports
 // -----------------------------------------------------------------------------

@@ -18,6 +18,7 @@
 		155929161EFCB4F500A6DFCF /* TimeGames.wav in Resources */ = {isa = PBXBuildFile; fileRef = 155929151EFCB4F500A6DFCF /* TimeGames.wav */; };
 		15B496AF1EFCC9E4009961DD /* buzzer_x.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15B496AE1EFCC9E4009961DD /* buzzer_x.wav */; };
 		AA77471BAA0F3654045129EA /* UIViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A9A8F21EFF533100924402 /* UIViewControllerProtocols.swift */; };
+		FACC241B22AA74C5000FC84C /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC241A22AA74C5000FC84C /* SwiftTryCatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		15B496AE1EFCC9E4009961DD /* buzzer_x.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buzzer_x.wav; sourceTree = "<group>"; };
 		200845918C109CBBC09BD74B /* Tap Tap Too-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tap Tap Too-Bridging-Header.h"; sourceTree = "<group>"; };
 		43954FA5AFB42ADBA21FD1D3 /* Tap Tap Too-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tap Tap Too-Prefix.pch"; sourceTree = "<group>"; };
+		FACC241922AA74C5000FC84C /* SwiftTryCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftTryCatch.h; path = SwiftTryCatch/SwiftTryCatch.h; sourceTree = SOURCE_ROOT; };
+		FACC241A22AA74C5000FC84C /* SwiftTryCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwiftTryCatch.m; path = SwiftTryCatch/SwiftTryCatch.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		1545B4BC1EF9FCED00A5A63E /* Tap Tap Too */ = {
 			isa = PBXGroup;
 			children = (
+				FACC241822AA74B4000FC84C /* SwiftTryCatch */,
 				15A9A8F31EFF533A00924402 /* Protocols */,
 				155929171EFCB4FE00A6DFCF /* Sounds and Music */,
 				1545B4DE1EFA1AE200A5A63E /* Categories and Extensions */,
@@ -126,6 +130,15 @@
 				15A9A8F21EFF533100924402 /* UIViewControllerProtocols.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		FACC241822AA74B4000FC84C /* SwiftTryCatch */ = {
+			isa = PBXGroup;
+			children = (
+				FACC241922AA74C5000FC84C /* SwiftTryCatch.h */,
+				FACC241A22AA74C5000FC84C /* SwiftTryCatch.m */,
+			);
+			name = SwiftTryCatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +219,7 @@
 				1545B4D61EFA166E00A5A63E /* MainMenuViewController.swift in Sources */,
 				1545B4E21EFA1C7A00A5A63E /* UIColor+UIColor_CustomColors.swift in Sources */,
 				1545B4BF1EF9FCED00A5A63E /* main.m in Sources */,
+				FACC241B22AA74C5000FC84C /* SwiftTryCatch.m in Sources */,
 				AA77471BAA0F3654045129EA /* UIViewControllerProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
