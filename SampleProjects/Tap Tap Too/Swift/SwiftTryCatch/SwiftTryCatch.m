@@ -32,7 +32,7 @@
 /**
  Provides try catch functionality for swift by wrapping around Objective-C
  */
-+ (void)tryBlock:(void(^)(void))tryBlock catchBlock:(void(^)(NSException*exception))catchBlock finallyBlock:(void(^)(void))finallyBlock {
++ (void)tryBlock:(void(^)())tryBlock catchBlock:(void(^)(NSException*exception))catchBlock finallyBlock:(void(^)())finallyBlock {
     @try {
         tryBlock ? tryBlock() : nil;
     }
