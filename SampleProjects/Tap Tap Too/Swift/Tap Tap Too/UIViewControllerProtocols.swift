@@ -1,3 +1,4 @@
+//  Converted to Swift 5 by Swiftify v5.0.39846 - https://objectivec2swift.com/
 //
 //  UIViewControllerProtocols.swift
 //  Tap Tap Too
@@ -8,6 +9,6 @@
 
 import Foundation
 
-protocol UIViewControllerProtocols: NSObjectProtocol {
+@objc protocol UIViewControllerProtocols: NSObjectProtocol {
     func dismiss(animated flag: Bool)
 }

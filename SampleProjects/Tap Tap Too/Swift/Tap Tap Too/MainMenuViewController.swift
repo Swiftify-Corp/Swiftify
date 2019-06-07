@@ -1,3 +1,4 @@
+//  Converted to Swift 5 by Swiftify v5.0.39846 - https://objectivec2swift.com/
 //
 //  MainMenuViewController.swift
 //  Tap Tap Too
@@ -14,18 +15,15 @@ class MainMenuViewController: UIViewController, UIViewControllerProtocols {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         playButton.layer.borderWidth = 2.0
         playButton.layer.borderColor = UIColor.aqua()?.cgColor
-        if let aColor = UIColor.aqua() {
-            playButton.tintColor = aColor
-        }
+        playButton.tintColor = UIColor.aqua()
         playButton.layer.cornerRadius = 8.0
-        matchesButton.layer.borderWidth = 2.0
-        matchesButton.layer.borderColor = UIColor.violet()?.cgColor
-        if let aColor = UIColor.violet() {
-            matchesButton.tintColor = aColor
-        }
-        matchesButton.layer.cornerRadius = 8.0
+        //matchesButton.layer.borderWidth = 2.0
+        //matchesButton.layer.borderColor = UIColor.violet().cgColor
+        //matchesButton.tintColor = UIColor.violet()
+        //matchesButton.layer.cornerRadius = 8.0
         // Do any additional setup after loading the view.
     }
 
@@ -43,6 +41,7 @@ class MainMenuViewController: UIViewController, UIViewControllerProtocols {
     }
 
 // MARK: - Navigation
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
@@ -51,7 +50,6 @@ class MainMenuViewController: UIViewController, UIViewControllerProtocols {
             let inGameViewController = segue.destination as? InGameViewController
             inGameViewController?.delegate = self
         } else {
-
         }
     }
 }

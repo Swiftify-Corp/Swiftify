@@ -1,3 +1,4 @@
+//  Converted to Swift 5 by Swiftify v5.0.39846 - https://objectivec2swift.com/
 //
 //  UIColor+UIColor_CustomColors.swift
 //  Tap Tap Too
