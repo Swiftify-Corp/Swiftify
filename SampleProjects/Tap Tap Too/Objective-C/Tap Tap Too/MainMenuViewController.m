@@ -10,7 +10,7 @@
 
 @interface MainMenuViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
-@property (weak, nonatomic) IBOutlet UIButton *matchesButton;
+//@property (weak, nonatomic) IBOutlet UIButton *matchesButton;
 @end
 
 @implementation MainMenuViewController
@@ -22,10 +22,10 @@
     self.playButton.layer.borderColor = [[UIColor aquaColor] CGColor];
     self.playButton.tintColor = [UIColor aquaColor];
     self.playButton.layer.cornerRadius = 8.0;
-    self.matchesButton.layer.borderWidth = 2.0;
-    self.matchesButton.layer.borderColor = [[UIColor violetColor] CGColor];
-    self.matchesButton.tintColor = [UIColor violetColor];
-    self.matchesButton.layer.cornerRadius = 8.0;
+    //self.matchesButton.layer.borderWidth = 2.0;
+    //self.matchesButton.layer.borderColor = [[UIColor violetColor] CGColor];
+    //self.matchesButton.tintColor = [UIColor violetColor];
+    //self.matchesButton.layer.cornerRadius = 8.0;
     // Do any additional setup after loading the view.
 }
 
