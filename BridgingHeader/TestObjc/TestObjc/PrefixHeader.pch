@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  TestObjc
+//
+//  Created by Ivan Kh on 11/09/2019.
+//  Copyright © 2019 Swiftify. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "Objc.h"
+#import <TestObjc-Swift.h>
+
+#endif /* PrefixHeader_pch */
