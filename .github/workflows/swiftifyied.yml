@@ -1,0 +1,152 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          - name: swift-codecov
+  # You may pin to the exact commit or the version.
+  # uses: mattpolzin/swift-codecov-action@b50e26564536d6fe87e39b2517c5b3f475947409
+  uses: mattpolzin/swift-codecov-action@0.5.0
+  with:
+    # The location of the JSON file produced by swift test --enable-code-coverage
+    CODECOV_JSON: # optional, default is .build/debug/codecov/*.json
+    # true by default, but if false then will not output the whole codecov table to stdout.
+    PRINT_STDOUT: # optional, default is true
+    # filename by default, but if specified otherwise will apply a sort order to the test coverage table. This is only relevant if PRINT_STDOUT is true. Possible values: filename, +cov, -cov
+    SORT_ORDER: # optional, default is filename
+    # By default, there is no minimum coverage. Set this to make the script fail if the minimum coverage is not met.
+    MINIMUM_COVERAGE: # optional
+    - name: coherent-swift
+  # You may pin to the exact commit or the version.
+  # uses: arthurpalves/coherent-swift@e1a6bcccca06e71b658873784a07db30f7dd6187
+  uses: arthurpalves/coherent-swift@0.5.5
+  with:
+    # Source folder to scan.
+    source: 
+    # Overall cohesion will be validated against this minimum threshold.
+    minimum_threshold: # default is 80
+    # The folder where your reports will be saved to.
+    reports_folder: # default is ./coherent-swift-reports
+    # If "true", measure in passive mode. Observe without enforcing changes
+    ignore_output_result: # default is false
+    # Format of cohesion report. Available formats: json, plain
+    report_format: # default is json
+    # If "true", only measure cohesion on changed files.
+    only_changes: # default is false
+    - name: Swift Action
+  # You may pin to the exact commit or the version.
+  # uses: Didstopia/SwiftAction@9207c0b840b29265a4774d65d2abbba9a499532d
+  uses: Didstopia/SwiftAction@v1.0.3
+  with:
+    # Swift action to run
+    swift-action: # default is build
+    - name: Swift Doc
+  # You may pin to the exact commit or the version.
+  # uses: SwiftDocOrg/swift-doc@f441648bcb8a6b07a3724bc1af2488e8a6e6c184
+  uses: SwiftDocOrg/swift-doc@1.0.0-beta.5
+  with:
+    # A path to a directory containing Swift (`.swift`) files in your workspace
+    inputs: # default is ./Sources
+    # The name of the module
+    module-name: 
+    # The output format (commonmark or html)
+    format: # optional, default is commonmark
+    # The base URL for all relative URLs generated in documents
+    base-url: # optional, default is ./
+    # The path for generated output
+    output: # default is ./.build/documentation
+    
+    - name: composer-root-version-action
+  # You may pin to the exact commit or the version.
+  # uses: ergebnis/composer-root-version-action@2c7382612488d071b47ee9de60f54d0a40862a37
+  uses: ergebnis/composer-root-version-action@0.2.1
+  with:
+    # Name of the branch, e.g. "main"
+    branch: # optional, default is main
+    # Path in which to look for composer.json
+    path: # optional, default is .
+- name: Xcode Build
+  # You may pin to the exact commit or the version.
+  # uses: devbotsxyz/xcode-build@2138f429e7bebe426d65985aca0dbad5370aa697
+  uses: devbotsxyz/xcode-build@v1.0.0
+  with:
+    # Workspace
+    workspace: # optional
+    # Project
+    project: # optional
+    # Scheme
+    scheme: # optional
+    # Configuration
+    configuration: # optional
+    # Code sign identity
+    code-sign-identity: # optional, default is -
+    - name: Setup Swift environment
+  # You may pin to the exact commit or the version.
+  # uses: sinoru/actions-setup-swift@ce50841d2d030c544000823fe28397a48cf85439
+  uses: sinoru/actions-setup-swift@v2.0.2
+  with:
+    # Exact version of a Swift version to use.
+    swift-version: # optional
+    - name: swift-create-xcframework
+  # You may pin to the exact commit or the version.
+  # uses: unsignedapps/swift-create-xcframework@87f07d0a776eda0078927b3e2d852d9695c464b0
+  uses: unsignedapps/swift-create-xcframework@v1.4.0
+  with:
+    # The name of the target(s) you want to create an XCFramework bundle for. One artifact will be uploaded for each target. Separate target names with commas.
+    target: # optional
+    # The platform(s) that you want to build for. Default is to build for all platforms supported in your Package.swift, or all Apple platforms if omited. Comma-delimited string supported.
+    platforms: # optional
+    # Build with a specific configuration ('debug' or 'release')
+    configuration: # optional, default is release
+    # The path to a .xcconfig file that can be used to override Xcode build settings. Relative to the package path.
+    xcconfig: # optional
+    - name: GitHub Action for SwiftLint
+  # You may pin to the exact commit or the version.
+  # uses: norio-nomura/action-swiftlint@9f4dcd7fd46b4e75d7935cf2f4df406d5cae3684
+  uses: norio-nomura/action-swiftlint@3.2.1
+  - name: GitHub Action for SwiftLint
+  # You may pin to the exact commit or the version.
+  # uses: norio-nomura/action-swiftlint@9f4dcd7fd46b4e75d7935cf2f4df406d5cae3684
+  uses: norio-nomura/action-swiftlint@3.2.1
+  - name: SPM Dependencies Checker
+  # You may pin to the exact commit or the version.
+  # uses: sbertix/spm-dependencies-checker@8cd219682cdcba4c00ae7e51eadfda90dd2f483a
+  uses: sbertix/spm-dependencies-checker@v1
+  with:
+    # The style for the `message` output (HTML or text).
+    language: # optional, default is txt
+    # A newline-separated list of libraries or authors (when starting with `@`) to exclude.
+    excluding: # optional, default is  
+    
+    code-sign-identity: # optional, default is -
