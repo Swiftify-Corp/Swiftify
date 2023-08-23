@@ -9,11 +9,11 @@
 - [Swiftify AppCode plugin](https://plugins.jetbrains.com/plugin/9701-swiftify)
 - [Online Converter](https://swiftify.com/converter/code/)
 
-Projects migrated to Swift by Swiftify Team:
+Projects migrated to Swift by Swiftify team:
 - [IHProgressHUD](https://github.com/Swiftify-Corp/IHProgressHUD)
 - [Swift-30-Projects](https://github.com/Swiftify-Corp/Swift-30-Projects)
 
-Projects migrated to Swift by Swiftify Users:
+Projects migrated to Swift by Swiftify users:
 - [MTPopover](https://github.com/mylemans/MTPopover)
 
 
